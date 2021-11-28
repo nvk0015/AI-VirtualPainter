@@ -18,6 +18,7 @@ The workflow of this script is:
 3. Use the Handtracking module to detect the landmarks, min and max distance accross the desired lanmarks (finger tips of index, thumb in our use case).
 4. Interpret the distrances across the desired landmarks with the detected audio range.
 5. Control the audio with variations in the landmark distances.
+6. 
 
 # VirtualPainter.py
 
@@ -32,4 +33,6 @@ The algorithm is described below.
 4. The algorithm has two modes - Drawing mode (when index finger tip alone is upwards), Selection mode (when both the finger tips are pointed upwards).
 5. Further based on the position of the landmark in selection mode, if the landmarks reaches to selection area in the template the background templates change relative to their distance ranges of available colors (Red, green, blue, eraser templates in our use case). 
 6. In the drawing mode, the painter draws across the postions of the landmark using opencv, and writes it to drive when broken out of the loop. 
+![AI-VirtualPainter Demo](https://user-images.githubusercontent.com/61786557/143735675-3edfe783-4525-439b-9331-ca40ea7a6cb4.gif)
+
 
